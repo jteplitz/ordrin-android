@@ -76,7 +76,7 @@ OrdrinApiListener listener = new OrdrinApiListener(){
       return;
     }
     try{
-      JSONArray addresses = responseData.getJSONArray(responseDAta
+      JSONArray addresses = responseData.getJSONArray("responseData");
       for (int i = 0; i < addresses.size(); i++){
         JSONObject address = addresses.get(i);
         // do something with the address here
