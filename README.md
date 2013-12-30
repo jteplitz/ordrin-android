@@ -105,12 +105,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Guest Order ([API Reference](http://hackfood.ordr.in/docs/order#order_guest))
 
+```java
   ordrinApi.order_guest(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.rid` : Ordr.in's unique restaurant identifier for the restaurant. (A number)
@@ -148,12 +150,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### User Order ([API Reference](http://hackfood.ordr.in/docs/order#order_user))
 
+```java
   ordrinApi.order_user(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.rid` : Ordr.in's unique restaurant identifier for the restaurant. (A number)
@@ -208,12 +212,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Delivery Check ([API Reference](http://hackfood.ordr.in/docs/restaurant#delivery_check))
 
+```java
   ordrinApi.delivery_check(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.datetime` : Delivery date and time (ASAP or mm-dd+HH:MM)
@@ -225,12 +231,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Delivery List ([API Reference](http://hackfood.ordr.in/docs/restaurant#delivery_list))
 
+```java
   ordrinApi.delivery_list(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.datetime` : Delivery date and time (ASAP or mm-dd+HH:MM)
@@ -241,12 +249,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Fee ([API Reference](http://hackfood.ordr.in/docs/restaurant#fee))
 
+```java
   ordrinApi.fee(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.datetime` : Delivery date and time (ASAP or mm-dd+HH:MM)
@@ -260,12 +270,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Restaurant Details ([API Reference](http://hackfood.ordr.in/docs/restaurant#restaurant_details))
 
+```java
   ordrinApi.restaurant_details(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.rid` : Ordr.in's unique restaurant identifier for the restaurant. (A number)
@@ -276,12 +288,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Change Password ([API Reference](http://hackfood.ordr.in/docs/user#change_password))
 
+```java
   ordrinApi.change_password(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -290,12 +304,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Create Account ([API Reference](http://hackfood.ordr.in/docs/user#create_account))
 
+```java
   ordrinApi.create_account(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -306,12 +322,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Create Address ([API Reference](http://hackfood.ordr.in/docs/user#create_addr))
 
+```java
   ordrinApi.create_addr(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -326,12 +344,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Create Credit Card ([API Reference](http://hackfood.ordr.in/docs/user#create_cc))
 
+```java
   ordrinApi.create_cc(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -349,12 +369,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Remove address ([API Reference](http://hackfood.ordr.in/docs/user#delete_addr))
 
+```java
   ordrinApi.delete_addr(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -363,12 +385,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Remove Credit Card ([API Reference](http://hackfood.ordr.in/docs/user#delete_cc))
 
+```java
   ordrinApi.delete_cc(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -377,12 +401,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Get Account Information ([API Reference](http://hackfood.ordr.in/docs/user#get_account_info))
 
+```java
   ordrinApi.get_account_info(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -390,12 +416,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Get All Saved Addresses ([API Reference](http://hackfood.ordr.in/docs/user#get_all_saved_addrs))
 
+```java
   ordrinApi.get_all_saved_addrs(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -403,12 +431,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Get all saved credit cards ([API Reference](http://hackfood.ordr.in/docs/user#get_all_saved_ccs))
 
+```java
   ordrinApi.get_all_saved_ccs(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -416,12 +446,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Get an Order ([API Reference](http://hackfood.ordr.in/docs/user#get_order))
 
+```java
   ordrinApi.get_order(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -430,12 +462,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Get Order History ([API Reference](http://hackfood.ordr.in/docs/user#get_order_history))
 
+```java
   ordrinApi.get_order_history(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -443,12 +477,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Get a single saved address ([API Reference](http://hackfood.ordr.in/docs/user#get_saved_addr))
 
+```java
   ordrinApi.get_saved_addr(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
@@ -457,12 +493,14 @@ be sent to, and must be set to either Servers.TEST Servers.PRODUCTION.
 
 #### Get a single saved credit card ([API Reference](http://hackfood.ordr.in/docs/user#get_saved_cc))
 
+```java
   ordrinApi.get_saved_cc(args, new OrdrinApiListener(){
     @Override
     public void onComplete(JSONObject responseData, int status){
       // handle response here
     }
   });
+```
 
 ##### Arguments
 - `args.email` : The user's email address
